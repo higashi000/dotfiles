@@ -21,9 +21,16 @@ repo = 'higashi000/dps-kakkonan'
 
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
+hook_add = '''
+colorscheme iceberg
+set background=dark
+'''
 
 [[plugins]]
 repo = 'prabirshrestha/vim-lsp'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
 
 [[plugins]]
 repo = 'Shougo/ddc.vim'
@@ -115,3 +122,12 @@ repo = 'vim-airline/vim-airline'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'vim-skk/skkeleton'
+hook_add = '''
+call skkeleton#config({ 'globalJisyo': '~/SKK-JISYO.L' })
+
+imap <C-j> <Plug>(skkeleton-enable)
+imap <C-f> <Plug>(skkeleton-disable)
+'''

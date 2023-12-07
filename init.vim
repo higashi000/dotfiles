@@ -65,10 +65,6 @@ endif
 " :押す手間が省ける
 noremap ; :
 
-" color scheme
-colorscheme iceberg
-set background=dark
-
 set clipboard^=unnamedplus
 
 noremap <silent><C-x> :bdelete<CR>
@@ -327,3 +323,4 @@ endfunction
 
 nnoremap <silent> <Leader>fl :Ddu file_rec<CR>
 
+autocmd BufWritePost *.toml call dpp#make_state(s:dpp_base, '$HOME/dotfiles/dpp_config.ts')

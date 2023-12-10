@@ -230,33 +230,14 @@ map <Leader>dk <Plug>(dps_kakkonan_delete_brackets)
 
 call ddu#custom#patch_global({
       \   'ui': 'ff',
-      \   'sourceOptions': {
-      \     '_': {
-      \       'columns': ['filename'],
-      \     },
-      \   },
       \   'uiParams': {
       \     'ff': {
       \       'split': 'floating',
       \       'startFilter': v:true,
       \     },
-      \   }
+      \   },
       \ })
 
-call ddu#custom#patch_global(#{
-      \   ui: 'ff',
-      \   sources: [#{name: 'sample', params: {}}],
-      \   sourceOptions : #{
-      \     sample : #{
-      \       converters: ['sample'],
-      \     }
-      \   },
-      \   kindOptions: #{
-      \     sample: #{
-      \       defaultAction: 'echo',
-      \     },
-      \   },
-      \ })
 call ddu#custom#patch_global({
       \   'kindOptions': {
       \     'file': {
@@ -283,15 +264,6 @@ call ddu#custom#patch_global('sourceParams', {
      \     'ignoredDirectories': ['.git', 'node_modules']
      \   },
      \ })
-
-call ddu#custom#patch_global({
-      \   'uiParams': {
-      \     'filer': {
-      \       'split': 'floating',
-      \     },
-      \     'startFilter': v:true,
-      \   }
-      \ })
 
 call ddu#custom#patch_global({
       \   'filterParams': {

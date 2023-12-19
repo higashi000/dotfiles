@@ -296,3 +296,17 @@ endfunction
 nnoremap <silent> <Leader>fl :Ddu file_rec<CR>
 
 autocmd BufWritePost *.toml call dpp#make_state(s:dpp_base, '$HOME/dotfiles/dpp_config.ts')
+
+call setcellwidths([
+      \ [0xe5ff, 0xe5ff, 2],
+      \ [0xe628, 0xe628, 2],
+      \ [0xe62b, 0xe62b, 2],
+      \ [0xe609, 0xe609, 2],
+      \ [0xe795, 0xe795, 2],
+      \ [0xe615, 0xe615, 2],
+      \ [0xe755, 0xe755, 2],
+      \ [0xe627, 0xe627, 2],
+      \ [0xe612, 0xe612, 2],
+      \ [0xe60e, 0xe60e, 2],
+      \ [0xe614, 0xe614, 2],
+      \ ])

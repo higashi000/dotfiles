@@ -37,51 +37,67 @@ repo = 'Shougo/ddc.vim'
 
 [[plugins]]
 repo = 'shun/ddc-vim-lsp'
+on_source = 'Shougo/ddc.vim'
 
 [[plugins]]
 repo = 'Shougo/ddc-around'
+on_source = 'Shougo/ddc.vim'
 
 [[plugins]]
 repo = 'Shougo/ddc-matcher_head'
+on_source = 'Shougo/ddc.vim'
 
 [[plugins]]
 repo = 'Shougo/ddc-sorter_rank'
+on_source = 'Shougo/ddc.vim'
 
 [[plugins]]
 repo = 'LumaKernel/ddc-file'
+on_source = 'Shougo/ddc.vim'
 
 [[plugins]]
 repo = 'Shougo/ddc-ui-native'
+on_source = 'Shougo/ddc.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu.vim'
+hooks_file = '$HOME/dotfiles/hooks/ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu-ui-ff'
+on_source = 'Shougo/ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu-source-file_rec'
+on_source = 'Shougo/ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu-filter-matcher_substring'
+on_source = 'Shougo/ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu-commands.vim'
+on_source = 'Shougo/ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu-source-line'
+on_source = 'Shougo/ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu-kind-file'
+on_source = 'Shougo/ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu-source-file'
+on_source = 'Shougo/ddu.vim'
 
 [[plugins]]
 repo = 'shun/ddu-source-buffer'
+on_source = 'Shougo/ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu-column-filename'
+on_source = 'Shougo/ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/defx.nvim'
@@ -119,9 +135,16 @@ on_func = 's:defx_my_settings'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
+hook_add = '''
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+'''
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
+hook_add = '''
+let g:airline_theme = 'iceberg'
+'''
 
 [[plugins]]
 repo = 'vim-skk/skkeleton'

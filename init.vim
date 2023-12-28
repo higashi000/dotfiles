@@ -122,36 +122,6 @@ nnoremap <silent> <Leader>ne :LspNextError<CR>
 nnoremap <silent> <Leader>pe :LspPreviousError<CR>
 nnoremap <silent> <Leader>td :LspTypeDefinition<CR>
 
-vmap ( <Plug>(dps_kakkonan_surround_parenthesis)
-vmap { <Plug>(dps_kakkonan_surround_curly)
-vmap [ <Plug>(dps_kakkonan_surround_square)
-vmap " <Plug>(dps_kakkonan_surround_doublequote)
-vmap ' <Plug>(dps_kakkonan_surround_singlequote)
-vmap ` <Plug>(dps_kakkonan_surround_backquote)
-
-let g:kakkonan_custom_brackets = {
-      \ "h1": {
-      \ "start": "<h1>",
-      \ "finish": "</h1>"
-      \ },
-      \ "script": {
-      \ "start": "<script>",
-      \ "finish": "</script>"
-      \ },
-      \ "<": {
-      \ "start": "<",
-      \ "finish": ">"
-      \ },
-      \ }
-
-map rp( <Plug>(dps_kakkonan_replace_parenthesis)
-map rp{ <Plug>(dps_kakkonan_replace_curly)
-map rp[ <Plug>(dps_kakkonan_replace_square)
-map rp" <Plug>(dps_kakkonan_replace_doublequote)
-map rp' <Plug>(dps_kakkonan_replace_singlequote)
-map rp` <Plug>(dps_kakkonan_replace_backquote)
-map <Leader>dk <Plug>(dps_kakkonan_delete_brackets)
-
 autocmd BufWritePost *.toml call dpp#make_state(s:dpp_base, '$HOME/dotfiles/dpp_config.ts')
 
 call setcellwidths([

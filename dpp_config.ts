@@ -45,7 +45,7 @@ export class Config extends BaseConfig {
 					lazy: false,
 				},
 			},
-		) as Toml[];
+		) as Toml;
 
 		const recordPlugins: Record<string, Plugin> = {};
 

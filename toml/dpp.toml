@@ -186,3 +186,6 @@ call skkeleton#config({ 'globalJisyo': '~/SKK-JISYO.L' })
 imap <C-j> <Plug>(skkeleton-enable)
 imap <C-f> <Plug>(skkeleton-disable)
 '''
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'

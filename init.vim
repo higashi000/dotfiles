@@ -125,6 +125,7 @@ nnoremap <silent> <Leader>td :LspTypeDefinition<CR>
 autocmd BufWritePost *.toml call dpp#make_state(s:dpp_base, '$HOME/dotfiles/dpp_config.ts')
 
 call setcellwidths([
+      \ [0xe5fe, 0xe5fe, 2],
       \ [0xe5ff, 0xe5ff, 2],
       \ [0xe628, 0xe628, 2],
       \ [0xe62b, 0xe62b, 2],

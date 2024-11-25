@@ -1,3 +1,4 @@
+filetype plugin on
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
@@ -141,3 +142,41 @@ call setcellwidths([
       \ [0xe60b, 0xe60b, 2],
       \ [0xe7b0, 0xe7b0, 2],
       \ ])
+
+call skkeleton#config({ 'globalDictionaries': [['~/SKK-JISYO.L', 'euc-jp']] })
+
+imap <C-j> <Plug>(skkeleton-enable)
+imap <C-f> <Plug>(skkeleton-disable)
+
+set runtimepath+=/Users/higashi/prj/github.com/higashi000/dps-kakkonan
+vmap ( <Plug>(dps_kakkonan_surround_parenthesis)
+vmap { <Plug>(dps_kakkonan_surround_curly)
+vmap [ <Plug>(dps_kakkonan_surround_square)
+vmap " <Plug>(dps_kakkonan_surround_doublequote)
+vmap ' <Plug>(dps_kakkonan_surround_singlequote)
+vmap ` <Plug>(dps_kakkonan_surround_backquote)
+
+let g:kakkonan_custom_brackets = {
+      \ "h1": {
+      \ "start": "<h1>",
+      \ "finish": "</h1>"
+      \ },
+      \ "script": {
+      \ "start": "<script>",
+      \ "finish": "</script>"
+      \ },
+      \ "<": {
+      \ "start": "<",
+      \ "finish": ">"
+      \ },
+      \ }
+
+map rp( <Plug>(dps_kakkonan_replace_parenthesis)
+map rp{ <Plug>(dps_kakkonan_replace_curly)
+map rp[ <Plug>(dps_kakkonan_replace_square)
+map rp" <Plug>(dps_kakkonan_replace_doublequote)
+map rp' <Plug>(dps_kakkonan_replace_singlequote)
+map rp` <Plug>(dps_kakkonan_replace_backquote)
+map <Leader>dk <Plug>(dps_kakkonan_delete_brackets)
+
+set runtimepath+=/Users/higashi/prj/github.com/higashi000/dps-clock

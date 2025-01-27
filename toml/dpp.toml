@@ -186,3 +186,6 @@ repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
 repo = 'higashi000/sarahck.vim'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'

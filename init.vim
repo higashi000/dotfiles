@@ -141,6 +141,8 @@ call setcellwidths([
       \ [0xe60d, 0xe60d, 2],
       \ [0xe60b, 0xe60b, 2],
       \ [0xe7b0, 0xe7b0, 2],
+      \ [0x2606, 0x2606, 2],
+      \ [0xe7ba, 0xe7ba, 2],
       \ ])
 
 call skkeleton#config({ 'globalDictionaries': [['~/SKK-JISYO.L', 'euc-jp']] })
@@ -180,3 +182,4 @@ map rp` <Plug>(dps_kakkonan_replace_backquote)
 map <Leader>dk <Plug>(dps_kakkonan_delete_brackets)
 
 set runtimepath+=/Users/higashi/prj/github.com/higashi000/dps-clock
+let g:user_emmet_mode='i'
